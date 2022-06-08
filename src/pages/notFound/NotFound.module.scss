@@ -1,0 +1,21 @@
+@import '../../variables';
+
+.notFound {
+  position:relative;
+  margin:200px auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    color: #af0e0e;
+  }
+  button {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border: 1px solid $blue;
+    border-radius: 26px;
+  }
+}
