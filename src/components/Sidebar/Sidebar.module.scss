@@ -1,0 +1,30 @@
+@import '../../variables';
+
+.sidebar {
+position: relative;
+  grid-area: 1 / 9 / 7 / 13;
+  width: 351px;
+
+  border-left: 1px solid #F0F4FB;
+  &__header {
+    position: absolute;
+    top: 27px;
+    left: 5px;
+    width: 322px;
+    height: 143px;
+    border: 1px solid $rose;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      color: $blue;
+    }
+    img {
+      position: absolute;
+      width: 91px;
+      height: 82px;
+      left: -5px;
+      top: 32px;
+    }
+  }
+}

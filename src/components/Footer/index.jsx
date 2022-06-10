@@ -5,7 +5,7 @@ import instagram from '../../assets/svg/Inst.svg'
 import google from '../../assets/img/google.png'
 import appStore from '../../assets/img/appStore.png'
 import styles from './Footer.module.scss'
-import {Link} from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -15,15 +15,15 @@ const Footer = () => {
          <div className={styles.footer__top_join}>
            <h4>Присоединяйтесь к нам</h4>
            <div className={styles.links}>
-             <Link to='https://ru-ru.facebook.com/'>
+             <a href='https://ru-ru.facebook.com/'  target="_blank" rel="noopener noreferrer">
                <img src={facebook} alt="facebook"/>
-             </Link>
-             <Link to='https://vk.com/'>
-               <img src={vkontakte} alt="vkontakte"/>
-             </Link>
-             <Link to='https://www.instagram.com/'>
-               <img src={instagram} alt="instagram"/>
-             </Link>
+             </a>
+             <a href='https://vk.com/' target="_blank" rel="noopener noreferrer">
+               <img src={vkontakte} alt="vkontakte" />
+             </a>
+             <a href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer">
+               <img src={instagram} alt="instagram" />
+             </a>
            </div>
          </div>
          <div className={styles.footer__top_install}>
@@ -31,12 +31,12 @@ const Footer = () => {
              Устанавливайте приложение
            </h4>
           <div className={styles.links}>
-            <Link to="https://play.google.com/store/games?hl=ru&gl=US">
+            <a href="https://play.google.com/store/games?hl=ru&gl=US"  target="_blank" rel="noopener noreferrer">
               <img src={google} alt="Google Play"/>
-            </Link>
-            <Link to="https://www.apple.com/ru/app-store/">
+            </a>
+            <a href="https://www.apple.com/ru/app-store/" target="_blank" rel="noopener noreferrer">
               <img src={appStore} alt="App Store"/>
-            </Link>
+            </a>
           </div>
          </div>
          <div className={styles.footer__bottom}>
@@ -44,16 +44,16 @@ const Footer = () => {
           © Sionic
         </span>
 
-           <Link to='#'>
+           <a href='/' target="_blank" rel="noopener noreferrer">
           <span>
             Правовая информация
           </span>
-           </Link>
-           <Link to='#'>
+           </a>
+           <a href='/' target="_blank" rel="noopener noreferrer">
           <span>
             Политика конфиденциальности
           </span>
-           </Link>
+           </a>
          </div>
        </div>
     </div>

@@ -1,0 +1,11 @@
+@import '../../variables';
+
+.button__primary {
+  border-radius: 51px;
+  background: $blue;
+  color: #fff;
+  border: none;
+  width: 194px;
+  height: 40px;
+  cursor: pointer;
+}

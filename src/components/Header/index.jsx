@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Header.module.scss'
 import {Link} from "react-router-dom";
-
+import Search from '../Search'
 import pin from '../../assets/svg/Pin.svg'
+import basket from '../../assets/svg/FullBasket.svg'
+import user from '../../assets/img/User.png'
 
 const Header = () => {
   return (
@@ -14,7 +16,15 @@ const Header = () => {
         <img src={pin} alt="pin"/>
         <span>Александровск-Са...</span>
       </Link>
-      <input type="text"/>
+      <div className={styles.search__block}>
+      <Search/>
+        <img
+          className={styles.basket}
+          src={basket} alt="basket"/>
+        <img
+          className={styles.user}
+          src={user} alt="user"/>
+      </div>
     </div>
   );
 };
