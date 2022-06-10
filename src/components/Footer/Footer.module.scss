@@ -1,6 +1,7 @@
 @import '../../variables';
 
 .footer {
+  position: relative;
   grid-area: 7 / 1 / 8 / 13;
   width: 100%;
   background: $secondary-light-grey;
@@ -33,11 +34,10 @@
     }
   }
   &__bottom{
+    align-self: center;
     grid-area: 3 / 2 / 4 / 5;
-    display: flex;
     height: fit-content;
-    gap: 20px;
-    align-items: center;
+    margin: 0 auto;
   }
 
   .links {

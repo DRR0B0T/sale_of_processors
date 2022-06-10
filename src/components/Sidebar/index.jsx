@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Sidebar.module.scss'
 import bag from '../../assets/img/Packets.png'
 import Button from '../Button'
+import SidebarCard from './SidebarCard'
 
 
 const Sidebar = () => {
@@ -9,9 +10,15 @@ const Sidebar = () => {
     <div className={styles.sidebar}>
       <div className={styles.sidebar__header}>
         <img src={bag} alt="bag"/>
-        <h3>Получай товары БЕСПЛАТНО!</h3>
-        <Button text='Узнать подробнее'/>
-
+        <div className={styles.sidebar__header_title}>
+          <h3>Получай товары БЕСПЛАТНО!</h3>
+          <Button text='Узнать подробнее'/>
+        </div>
+      </div>
+      <div className={styles.sidebar__cards}>
+        <SidebarCard />
+        <SidebarCard />
+        <SidebarCard />
       </div>
     </div>
   );
