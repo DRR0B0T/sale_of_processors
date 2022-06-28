@@ -1,0 +1,42 @@
+@import '../../variables';
+
+.category {
+  padding: 50px 20px;
+
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    width: 500px;
+    span {
+      font-weight: 600;
+      font-size: 12px;
+      cursor: pointer;
+      color: $blue;
+    }
+  }
+
+  .buttonsContainer {
+    display: flex;
+    gap: 6px;
+    margin-top: 20px;
+  }
+
+ &__items {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 20px;
+   &_item{
+     width: 214px;
+     height: 283px;
+      &_price{
+
+      }
+   }
+ }
+}
+

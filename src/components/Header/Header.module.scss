@@ -1,17 +1,16 @@
 .header {
   grid-area: 1 / 1 / 2 / 9;
   display: flex;
+  max-width: 1015px;
   gap: 20px;
   align-items: center;
-  width: 1114px;
   height: 82px;
+  padding: 20px 50px;
 }
 
 .search__block {
   display: flex;
-  width: 604px;
-  height: 50px;
-
+  max-width: 604px;
 }
 
 .basket {

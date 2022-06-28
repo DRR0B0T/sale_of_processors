@@ -1,14 +1,27 @@
 @import '../../variables';
 
-.button__primary {
-  border-radius: 51px;
-  background: $blue;
-  color: #fff;
+.button{
+  padding: 2px 10px;
+  font-size: 16px;
   border: none;
-  width: 194px;
+  width: fit-content;
   height: 40px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 16px;
   line-height: 19px;
+  border-radius: 51px;
+&_primary {
+  background: $blue;
+  color: #fff;
 }
+
+&_outlined {
+  background: #fff;
+  color: $blue;
+  border: 1px solid $blue;
+}
+
+}
+
+
+
